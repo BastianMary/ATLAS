@@ -6,7 +6,6 @@
     color:rgb(255, 196, 0);
     text-align: center;
     animation: apparition 2s ease-out;
-    font-family: 'Moon';
     font-size: 100px;
 }
 #h2{
@@ -15,6 +14,7 @@
 
 html{ 
     color: rgb(255, 196, 0);
+    font-family: 'Moon';
 }
 #contenus1{
     display: flex;
