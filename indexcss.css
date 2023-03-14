@@ -1,6 +1,6 @@
 @font-face {
 	font-family:'Moon';
-	src: url("../polices/Moon2.0-Light.otf") format('OpenType'),
+	src: url("./polices/Moon2.0-Light.otf") format('OpenType'),
 }
 .titre{
     color:rgb(255, 196, 0);
