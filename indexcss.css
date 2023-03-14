@@ -1,0 +1,170 @@
+@font-face {
+	font-family:'Moon';
+	src: url("../polices/Moon2.0-Light.otf") format('OpenType'),
+}
+.titre{
+    color:rgb(255, 196, 0);
+    text-align: center;
+    animation: apparition 2s ease-out;
+    font-family: 'Moon';
+    font-size: 100px;
+}
+#h2{
+    font-size: 40px;
+}
+
+html{ 
+    color: rgb(255, 196, 0);
+}
+#contenus1{
+    display: flex;
+    flex-direction: column;
+    padding-bottom:145px;
+}
+.grpdiv{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    animation: agrandissement 3s;
+    margin-left: 40px;
+    margin-right: 40px;
+    justify-content: center;
+    gap: 30px;
+}
+/* ##########################--PLANETES--########################## */
+#Soleil{
+    width: 650px;
+    height:650px;
+    background-image: url("images/soleil.png");
+}
+#Mercure{
+    width: 35px;
+    height:35px;
+    background-image: url("images/mercure.png");
+}
+#Venus{
+    width: 50px;
+    height:50px;
+    background-image: url("images/venus.png");
+}
+#Terre{
+    width: 50px;
+    height:50px;
+    background-image: url("images/terre.png");
+}
+#Mars{
+    width: 40px;
+    height:40px;
+    background-image: url("images/mars.png");
+}
+#Jupiter{
+    width: 200px;
+    height:200px;
+    background-image: url("images/jupiter.png");
+}
+#Saturne{
+    width: 400px;
+    height:200px;
+    background-image: url("images/saturne.png");
+}
+#Uranus{
+    width: 60px;
+    height:60px;
+    background-image: url("images/uranus.png");
+}
+#Neptune{
+    width: 60px;
+    height:60px;
+    background-image: url("images/neptune.png");
+}
+/*-----------------------------------------------------*/
+.planete {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 500px;
+    transition: transform .2s;
+}
+
+:hover.planete {
+    box-shadow: 0 0 0 0 rgb(255, 255, 255);
+    animation: pulse 1s infinite;
+    transform: scale(1.1);
+}
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes pulse {
+    to {
+        box-shadow: 0 0 0 50px rgba(255, 0, 0, 0);
+    }
+}
+/* ##########################--SPAWN--########################## */
+@keyframes apparition {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes agrandissement {
+    from {
+        scale: 0%;
+    }
+    to {
+        scale: 100%;
+    }
+}
+/* ##########################--RESPONSIVE--########################## */
+@media only screen and (max-width: 1870px) {
+    .grpdiv{
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+@media only screen and (max-width: 1870px) {
+    #bg{
+        height: 100%;}
+}
+/* ##########################--PARALAX--########################## */
+body{
+    margin: 0;
+    background-color: #000000;
+}
+#bg {
+    position: flex;
+    width: auto;
+    height: auto;
+    background-image: 
+    url(https://media.discordapp.net/attachments/1068515510418944073/1080477847178723448/sketch-1677676374969.png?width=608&height=608),
+    url(https://media.discordapp.net/attachments/1068515510418944073/1080477846641856603/sketch-1677676361569.png?width=608&height=608),
+    url(https://media.discordapp.net/attachments/1068515510418944073/1080477846927048764/sketch-1677676368185.png?width=608&height=608);
+    background-repeat: repeat;
+    background-position: 50% 50%;
+}
+/* ##########################--SECONDEPARTIE--########################## */
+#contenus2{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255, 196, 0, 0.253) 100%);
+}
+#ligne{
+    width: 100%;
+    border: 1px rgb(255, 196, 0) solid;
+}
+footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#cop{
+
+}

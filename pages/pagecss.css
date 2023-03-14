@@ -1,0 +1,153 @@
+@font-face {
+	font-family:'Moon';
+	src: url("../polices/Moon2.0-Light.otf") format('OpenType'),
+}
+h1{
+    color:rgb(255, 196, 0);
+    text-align: center;
+    border-radius: 1px;
+    font-size: 100px;
+    font-family: 'Moon';
+}
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    word-break: keep-all;
+}
+
+#barre{
+  width: 100%;
+  display: grid;
+  grid-template-areas: "b a";
+  grid-template-columns: auto 1fr;
+  animation: apparition 2s ease-out;
+}
+#planete_nom {
+    grid-area: a;
+
+    text-align: center;
+    align-self: center;
+}
+#back {
+    grid-area: b;
+    font-size: 70px;
+    font-family: 'Moon';
+    color:rgb(255, 196, 0);
+    align-self: center;
+    position: absolute;
+}
+
+#presentation{
+    display: grid;
+    width: auto;
+    height: auto;
+
+    grid-template-areas: "b a";
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+    animation: agrandissement 3s;
+}
+#Jupiter{
+    background-image: url("../images/jupiter.png");
+
+    grid-area: b;
+}
+.planete {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 500px;
+    width: 800px;
+    height: 800px;
+    grid-area: a;
+}
+#informations {
+    color:rgb(255, 196, 0);
+    font-size: 40px;
+    font-family: 'Moon';
+    text-align: left;
+    padding-left: 10%;
+}
+/* ##########################--SPAWN--########################## */
+@keyframes apparition {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes agrandissement {
+  from {
+      scale: 0%;
+  }
+  to {
+      scale: 100%;
+  }
+}
+/* ##########################--PARALAX--########################## */
+body{
+    margin: 0;
+    background-color: #000000;
+}
+#bg {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: 
+    url(https://media.discordapp.net/attachments/1068515510418944073/1080477847178723448/sketch-1677676374969.png?width=608&height=608),
+    url(https://media.discordapp.net/attachments/1068515510418944073/1080477846641856603/sketch-1677676361569.png?width=608&height=608),
+    url(https://media.discordapp.net/attachments/1068515510418944073/1080477846927048764/sketch-1677676368185.png?width=608&height=608);
+    background-repeat: repeat;
+    background-position: center;
+    background-position: 50% 50%;
+}
+/* ##########################--BOUTON--########################## */
+  .bttn-stretch {
+    margin-left: 10px;
+    border-color: transparent;
+    cursor:pointer;
+    overflow: hidden;
+    background: transparent;
+    -webkit-transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+    transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+  }
+  .bttn-stretch:after,
+  .bttn-stretch:before {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    border: 2px rgb(255, 196, 0) solid;
+    border-radius: 50px;
+    content: '';
+    opacity: 1;
+    -webkit-transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+    transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  .bttn-stretch:after {top: 0;}
+  .bttn-stretch:before {bottom: 0;}
+
+  .bttn-stretch:hover,
+  .bttn-stretch:focus {
+    letter-spacing: 5px;
+    -webkit-transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  }
+  .bttn-stretch:hover:after,
+  .bttn-stretch:focus:after {
+    -webkit-transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  .bttn-stretch:hover:before,
+  .bttn-stretch:focus:before {
+    -webkit-transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
