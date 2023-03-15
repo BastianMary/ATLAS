@@ -118,6 +118,7 @@ html{
         margin-top: 50px;
         margin-bottom: 50px;
     }
+
 }
 @media only screen and (max-width: 700px) {
     .titre{
@@ -126,6 +127,15 @@ html{
     #h2{
         font-size: 20px;
     }
+    #Soleil{width: 60%;}
+    #Mercure{width: 8%;}
+    #Venus{width: 15%;}
+    #Terre{width: 15%;}
+    #Mars{width: 11%;}
+    #Jupiter{width: 40%;}
+    #Saturne{width: 70%;}
+    #Uranus{width: 20%;}
+    #Neptune{width: 20%;}
 }
 /* ##########################--PARALAX--########################## */
 body{
