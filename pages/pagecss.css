@@ -48,6 +48,7 @@ h1{
 
     align-items: center;
     animation: agrandissement 3s;
+    margin-top: 30px;
 }
 #Jupiter{
     background-image: url("../images/jupiter.png");
@@ -58,8 +59,8 @@ h1{
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 500px;
-    width: 800px;
-    height: 800px;
+    width: 80%;
+    aspect-ratio: 1/1;
     grid-area: a;
 }
 #informations {
@@ -85,6 +86,19 @@ h1{
   to {
       scale: 100%;
   }
+}
+
+
+@media only screen and (max-width: 800px) {
+    h1{
+        font-size: 40px;
+    }
+    #back{
+        font-size: 20px;
+    }
+    #informations{
+        font-size: 20px;
+    }
 }
 /* ##########################--PARALAX--########################## */
 body{

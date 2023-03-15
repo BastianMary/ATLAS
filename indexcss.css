@@ -26,55 +26,47 @@ html{
     flex-direction:row;
     align-items: center;
     animation: agrandissement 3s;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
     justify-content: center;
     gap: 30px;
 }
 /* ##########################--PLANETES--########################## */
 #Soleil{
-    width: 650px;
-    height:650px;
+    width: 35.3%;
     background-image: url("images/soleil.png");
 }
 #Mercure{
-    width: 35px;
-    height:35px;
+    width: 2%;
     background-image: url("images/mercure.png");
 }
 #Venus{
-    width: 50px;
-    height:50px;
+    width: 3.2%;
     background-image: url("images/venus.png");
 }
 #Terre{
-    width: 50px;
-    height:50px;
+    width: 3.2%;
     background-image: url("images/terre.png");
 }
 #Mars{
-    width: 40px;
-    height:40px;
+    width: 2.5%;
     background-image: url("images/mars.png");
 }
 #Jupiter{
-    width: 200px;
-    height:200px;
+    width: 12%;
     background-image: url("images/jupiter.png");
 }
 #Saturne{
-    width: 400px;
-    height:200px;
+    width: 19%;
     background-image: url("images/saturne.png");
+    aspect-ratio: 2/1;
 }
 #Uranus{
-    width: 60px;
-    height:60px;
+    width: 4%;
     background-image: url("images/uranus.png");
 }
 #Neptune{
-    width: 60px;
-    height:60px;
+    width: 4%;
     background-image: url("images/neptune.png");
 }
 /*-----------------------------------------------------*/
@@ -83,6 +75,7 @@ html{
     background-size: cover;
     border-radius: 500px;
     transition: transform .2s;
+    aspect-ratio: 1/1;
 }
 
 :hover.planete {
@@ -126,9 +119,13 @@ html{
         margin-bottom: 50px;
     }
 }
-@media only screen and (max-width: 1870px) {
-    #bg{
-        height: 100%;}
+@media only screen and (max-width: 700px) {
+    .titre{
+        font-size: 50px;
+    }
+    #h2{
+        font-size: 20px;
+    }
 }
 /* ##########################--PARALAX--########################## */
 body{
@@ -165,6 +162,6 @@ footer{
     align-items: center;
     flex-direction: column;
 }
-#cop{
+/* #cop{
 
-}
+} */
