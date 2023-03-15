@@ -50,18 +50,23 @@ h1{
     animation: agrandissement 3s;
     margin-top: 30px;
 }
-#Jupiter{
-    background-image: url("../images/jupiter.png");
+#Soleil{background-image: url("../images/soleil.png");}
+#Mercure{background-image: url("../images/mercure.png");}
+#Venus{background-image: url("../images/venus.png");}
+#Terre{background-image: url("../images/terre.png");}
+#Mars{background-image: url("../images/mars.png");}
+#Jupiter{background-image: url("../images/jupiter.png");}
+#Saturne{background-image: url("../images/saturne.png");}
+#Uranus{background-image: url("../images/uranus.png");}
+#Neptune{background-image: url("../images/neptune.png");}
 
-    grid-area: b;
-}
 .planete {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 500px;
     width: 80%;
     aspect-ratio: 1/1;
-    grid-area: a;
+    grid-area: b;
 }
 #informations {
     color:rgb(255, 196, 0);
