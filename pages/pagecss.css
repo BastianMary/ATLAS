@@ -56,7 +56,8 @@ h1{
 #Terre{background-image: url("../images/terre.png");}
 #Mars{background-image: url("../images/mars.png");}
 #Jupiter{background-image: url("../images/jupiter.png");}
-#Saturne{background-image: url("../images/saturne.png");}
+#Saturne{background-image: url("../images/saturne.png");
+    aspect-ratio: 2/1;}
 #Uranus{background-image: url("../images/uranus.png");}
 #Neptune{background-image: url("../images/neptune.png");}
 
