@@ -81,8 +81,12 @@ html{
 :hover.planete {
     box-shadow: 0 0 0 0 rgb(255, 255, 255);
     animation: pulse 1s infinite;
+    transform: scale(1.3);
+}
+:hover#soleil,:hover#saturne,:hover#jupiter{
     transform: scale(1.1);
 }
+
 *, ::before, ::after {
     box-sizing: border-box;
     margin: 0;
@@ -91,7 +95,7 @@ html{
 
 @keyframes pulse {
     to {
-        box-shadow: 0 0 0 50px rgba(255, 0, 0, 0);
+        box-shadow: 0 0 0 50px rgba(255, 255, 255, 0);
     }
 }
 /* ##########################--SPAWN--########################## */
@@ -120,22 +124,22 @@ html{
     }
 
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
     .titre{
-        font-size: 50px;
+        font-size: 65px;
     }
     #h2{
-        font-size: 20px;
+        font-size: 30px;
     }
-    #Soleil{width: 60%;}
-    #Mercure{width: 8%;}
-    #Venus{width: 15%;}
-    #Terre{width: 15%;}
-    #Mars{width: 11%;}
-    #Jupiter{width: 40%;}
-    #Saturne{width: 70%;}
-    #Uranus{width: 20%;}
-    #Neptune{width: 20%;}
+    #Soleil{width: 90%;}
+    #Mercure{width: 16%;}
+    #Venus{width: 25%;}
+    #Terre{width: 25%;}
+    #Mars{width: 20%;}
+    #Jupiter{width: 60%;}
+    #Saturne{width: 100%;}
+    #Uranus{width: 35%;}
+    #Neptune{width: 35%;}
 }
 /* ##########################--PARALAX--########################## */
 body{

@@ -49,6 +49,7 @@ h1{
     align-items: center;
     animation: agrandissement 3s;
     margin-top: 30px;
+    margin-left: 30px;
 }
 #Soleil{background-image: url("../images/soleil.png");}
 #Mercure{background-image: url("../images/mercure.png");}
@@ -56,8 +57,7 @@ h1{
 #Terre{background-image: url("../images/terre.png");}
 #Mars{background-image: url("../images/mars.png");}
 #Jupiter{background-image: url("../images/jupiter.png");}
-#Saturne{background-image: url("../images/saturne.png");
-    aspect-ratio: 2/1;}
+#Saturne{background-image: url("../images/saturne2.png");}
 #Uranus{background-image: url("../images/uranus.png");}
 #Neptune{background-image: url("../images/neptune.png");}
 
@@ -104,6 +104,9 @@ h1{
     }
     #informations{
         font-size: 20px;
+    }
+    #presentation{
+        margin-left: 10px;
     }
 }
 /* ##########################--PARALAX--########################## */
