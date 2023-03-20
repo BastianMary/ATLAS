@@ -2,6 +2,10 @@
 	font-family:'Moon';
 	src: url("../polices/Moon2.0-Light.otf") format('OpenType'),
 }
+@font-face {
+	font-family:'Moon2';
+	src: url("../polices/Moon2.0-Regular.otf") format('OpenType'),
+}
 h1{
     color:rgb(255, 196, 0);
     text-align: center;
@@ -49,7 +53,11 @@ h1{
     align-items: center;
     animation: agrandissement 3s;
     margin-top: 30px;
-    margin-left: 30px;
+    margin-left: 2%;
+}
+li{
+    font-family: "Moon2";
+    opacity: 0.8;
 }
 #Soleil{background-image: url("../images/soleil.png");}
 #Mercure{background-image: url("../images/mercure.png");}
@@ -74,7 +82,7 @@ h1{
     font-size: 40px;
     font-family: 'Moon';
     text-align: left;
-    padding-left: 10%;
+    padding-left: 7%;
 }
 /* ##########################--SPAWN--########################## */
 @keyframes apparition {
