@@ -4,7 +4,7 @@
 }
 @font-face {
 	font-family:'Moon2';
-	src: url("../polices/Moon2.0-Regular.otf") format('OpenType'),
+	src: url("./polices/Moon2.0-Regular.otf") format('OpenType'),
 }
 .titre{
     color:rgb(255, 196, 0);
