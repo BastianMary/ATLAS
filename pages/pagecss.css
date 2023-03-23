@@ -57,7 +57,7 @@ h1{
 }
 li{
     font-family: "Moon2";
-    opacity: 0.8;
+    opacity: 0.9;
 }
 #Soleil{background-image: url("../images/soleil.png");}
 #Mercure{background-image: url("../images/mercure.png");}
@@ -112,9 +112,21 @@ li{
     }
     #informations{
         font-size: 20px;
+        margin-top: 15%;
+        margin-bottom: 5%;
     }
     #presentation{
-        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    #barre {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    button {
+        opacity: 0;
+        height: 0px;
     }
 }
 /* ##########################--PARALAX--########################## */
