@@ -15,4 +15,13 @@
         console.log(x);
         elem.style.backgroundPosition = x;
     }
-})();
+})()
+
+function changerTaille() {
+    var maDiv = document.getElementById('maDiv');
+
+    Mercure.style.width = nouvelleTaille 
+    maDiv.style.height = nouvelleTaille + 'px';
+}
+
+;

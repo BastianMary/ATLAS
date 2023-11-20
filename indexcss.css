@@ -41,7 +41,7 @@ html{
     background-image: url("images/soleil.png");
 }
 #Mercure{
-    width: 2%;
+    width: 0.12%;
     background-image: url("images/mercure.png");
 }
 #Venus{
@@ -85,6 +85,9 @@ html{
     box-shadow: 0 0 0 0 rgb(255, 255, 255);
     animation: pulse 1s infinite;
     transform: scale(1.3);
+}
+:hover.flipswitch{
+    transform: scale(1.2);
 }
 :hover#soleil,:hover#saturne,:hover#jupiter{
     transform: scale(1.1);
@@ -209,3 +212,84 @@ footer{
 /* #cop{
 
 } */
+
+/* ##########################--Interrupteur--########################## */
+
+.flipswitch {
+    position: absolute;
+    width: 106px;
+    border-radius: 100px;
+    transition: transform .2s;
+    margin-left: 90%;
+    margin-top: 4%;
+  }
+  .flipswitch input[type=checkbox] {
+    display: none;
+  }
+  .flipswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+  .flipswitch-inner {
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+  }
+  .flipswitch-inner:before, .flipswitch-inner:after {
+    float: left;
+    width: 50%;
+    height: 40px;
+    padding: 0;
+    line-height: 40px;
+    font-size: 22px;
+    color: white;
+    font-family: Trebuchet, Arial, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+  }
+  .flipswitch-inner:before {
+    content: "I";
+    padding-left: 12px;
+    background-color: #ffc400;
+    color: #ffffff;
+    opacity: 0.9;
+  }
+  .flipswitch-inner:after {
+    content: "O";
+    padding-right: 12px;
+    background-color: #444444;
+    color: #ffffff;
+    text-align: right;
+    opacity: 0.8;
+  }
+  .flipswitch-switch {
+    width: 46px;
+    margin: -3px;
+    background-image: url(images/soleil.png);
+    background-color: #FFC400;
+    border: 1px solid #0e0d0d;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 64px;
+    transition: all 0.3s ease-in 0s;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  :hover.flipswitch-switch {
+    animation: pulse 1s infinite;
+    transform: scale(1.2);
+}
+
+
+  .flipswitch-cb:checked + .flipswitch-label .flipswitch-inner {
+    margin-left: 0;
+  }
+  .flipswitch-cb:checked + .flipswitch-label .flipswitch-switch {
+    right: 0;
+  }
+  
