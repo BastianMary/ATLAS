@@ -17,11 +17,30 @@
     }
 })()
 
+var nbclick = false;
+
 function changerTaille() {
-    var maDiv = document.getElementById('maDiv');
-
-    Mercure.style.width = nouvelleTaille 
-    maDiv.style.height = nouvelleTaille + 'px';
+    if (nbclick==true){
+        Mercure.style.width = 2 + '%';
+        Venus.style.width = 3.2 + '%';
+        Terre.style.width = 3.2 + '%';
+        Mars.style.width = 2.5 + '%';
+        Jupiter.style.width = 12 + '%';
+        Saturne.style.width = 19 + '%';
+        Uranus.style.width = 4 + '%';
+        Neptune.style.width = 4 + '%';
+        [document.querySelector(".grpdiv").style.gap=30+"px"];
+    }else{
+        Mercure.style.width = 0.123 + '%';
+        Venus.style.width = 0.123 + '%';
+        Terre.style.width = 0.3177 + '%';
+        Mars.style.width = 0.1765 + '%';
+        Jupiter.style.width = 3.53 + '%';
+        Saturne.style.width = 6 + '%';
+        Uranus.style.width = 1.27 + '%';
+        Neptune.style.width = 1.235 + '%';
+        [document.querySelector(".grpdiv").style.gap=6+"%"];
+    }  
+    nbclick=!nbclick
 }
-
 ;
