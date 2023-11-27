@@ -41,6 +41,10 @@ html{
     width: 35.3%;
     background-image: url("images/soleil.png");
     box-shadow: 0 0 0 0 rgba(255, 196, 0, 0.589);
+    border:solid rgb(255,123,0) 10px;
+    box-shadow:
+    0 0 60px 30px rgb(255, 196, 0),
+    0 0 140px 90px rgb(255,123,0);
 }
 #Mercure{
     width: 2%;
