@@ -59,15 +59,19 @@ li{
     font-family: "Moon2";
     opacity: 0.9;
 }
-#Soleil{background-image: url("../images/soleil.png");}
-#Mercure{background-image: url("../images/mercure.png");}
-#Venus{background-image: url("../images/venus.png");}
-#Terre{background-image: url("../images/terre.png");}
-#Mars{background-image: url("../images/mars.png");}
-#Jupiter{background-image: url("../images/jupiter.png");}
-#Saturne{background-image: url("../images/saturne2.png");}
-#Uranus{background-image: url("../images/uranus.png");}
-#Neptune{background-image: url("../images/neptune.png");}
+#Soleil{background-image: url("../images/soleil.png");
+    box-shadow:
+    1px 1px 60px 20px rgb(255, 196, 0),
+    1px 1px 120px 90px rgb(255,123,0);
+    background-color: rgb(255,123,0);}
+#Mercure{background-image: url("../images/mercure.png");--planetcolor:150,150,150;}
+#Venus{background-image: url("../images/venus.png");--planetcolor:251,111,0;}
+#Terre{background-image: url("../images/terre.png");--planetcolor:16,93,161;}
+#Mars{background-image: url("../images/mars.png");--planetcolor:187,81,0;}
+#Jupiter{background-image: url("../images/jupiter.png");--planetcolor:234,178,122;}
+#Saturne{background-image: url("../images/saturne2.png");--planetcolor:255,232,161;}
+#Uranus{background-image: url("../images/uranus.png");--planetcolor:28,165,198;}
+#Neptune{background-image: url("../images/neptune.png");--planetcolor:0,82,196;}
 
 .planete {
     background-repeat: no-repeat;
@@ -76,6 +80,12 @@ li{
     width: 80%;
     aspect-ratio: 1/1;
     grid-area: b;
+
+    box-shadow:
+    0px 0px 60px 20px rgb(var(--planetcolor)),
+    0px 0px 10px 10px rgba(0, 0, 0, 0);
+
+    background-color: rgb(var(--planetcolor));
 }
 #oui{
     align-items: center;

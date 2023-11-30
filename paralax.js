@@ -26,7 +26,7 @@ function changerTaille() {
         Terre.style.width = 3.2 + '%';
         Mars.style.width = 2.5 + '%';
         Jupiter.style.width = 12 + '%';
-        Saturne.style.width = 19 + '%';
+        Grpsaturne.style.width = 19 + '%';
         Uranus.style.width = 4 + '%';
         Neptune.style.width = 4 + '%';
         [document.querySelector(".grpdiv").style.gap=30+"px"];
@@ -36,7 +36,7 @@ function changerTaille() {
         Terre.style.width = 0.3177 + '%';
         Mars.style.width = 0.1765 + '%';
         Jupiter.style.width = 3.53 + '%';
-        Saturne.style.width = 6 + '%';
+        Grpsaturne.style.width = 6 + '%';
         Uranus.style.width = 1.27 + '%';
         Neptune.style.width = 1.235 + '%';
         [document.querySelector(".grpdiv").style.gap=6+"%"];

@@ -40,42 +40,62 @@ html{
 #Soleil{
     width: 35.3%;
     background-image: url("images/soleil.png");
-    box-shadow: 0 0 0 0 rgba(255, 196, 0, 0.589);
-    border:solid rgb(255,123,0) 10px;
+    --planetcolor:255,123,0;
     box-shadow:
-    0 0 60px 30px rgb(255, 196, 0),
-    0 0 140px 90px rgb(255,123,0);
+    1px 1px 60px 20px rgb(255, 196, 0),
+    1px 1px 120px 90px rgb(255,123,0);
+    background-color: rgb(255,123,0);
 }
 #Mercure{
+    --planetcolor:200,200,200;
     width: 2%;
     background-image: url("images/mercure.png");
 }
 #Venus{
+    --planetcolor:251,111,0;
     width: 3.2%;
     background-image: url("images/venus.png");
 }
 #Terre{
+    --planetcolor:16,93,161;
     width: 3.2%;
     background-image: url("images/terre.png");
 }
 #Mars{
+    --planetcolor:187,81,0;
     width: 2.5%;
     background-image: url("images/mars.png");
 }
 #Jupiter{
+    --planetcolor:234,178,122;
     width: 12%;
     background-image: url("images/jupiter.png");
 }
-#Saturne{
+#Grpsaturne{
+    display: flex;
     width: 19%;
-    background-image: url("images/saturne.png");
     aspect-ratio: 2/1;
+    transition: transform 0.5s , width 3s;
+    align-items: center;
+    justify-content: center;
+    background-image: url("images/saturne.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#Saturne{
+    --planetcolor:255,232,161;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0);
 }
 #Uranus{
+    --planetcolor:28,165,198;
     width: 4%;
     background-image: url("images/uranus.png");
 }
 #Neptune{
+    --planetcolor:0,82,196;
     width: 4%;
     background-image: url("images/neptune.png");
 }
@@ -83,22 +103,31 @@ html{
 .planete {
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 500px;
+    border-radius: 100%;
     transition: transform 0.5s , width 3s;
     aspect-ratio: 1/1;
+    box-shadow:
+    0px 0px 20px 0px rgb(var(--planetcolor)),
+    0px 0px 10px 10px rgba(0, 0, 0, 0);
+
+    background-color: rgb(var(--planetcolor));
 }
 :hover.planete {
-    box-shadow: 0 0 0 0 rgb(255, 255, 255);
+    box-shadow: 0 0 0 0 rgb(--planetcolor);
     animation: pulse 1s infinite;
     transform: scale(1.35);
 }
 :hover.flipswitch{
     transform: scale(1.2);
 }
-:hover#soleil,:hover#saturne,:hover#jupiter{
-    transform: scale(1.18);
+:hover#soleil,:hover#Grpsaturne,:hover#jupiter{
+    transform: scale(1.16);
+}
+:hover#saturne{
+    transform: none;
 }
 :hover#soleil{
+    animation: none;
     transform: scale(1.1);
 }
 img{
@@ -293,8 +322,6 @@ footer{
     animation: pulse 1s infinite;
     transform: scale(1.2);
 }
-
-
   .flipswitch-cb:checked + .flipswitch-label .flipswitch-inner {
     margin-left: 0;
   }
