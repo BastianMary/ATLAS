@@ -172,9 +172,9 @@ body{
     width: 100%;
     height: 100vh;
     background-image: 
-    url("images/backgroundetoiles1.png"),
-    url("images/backgroundetoiles2.png"),
-    url("images/backgroundetoiles3.png");
+    url("../images/backgroundetoiles1.png"),
+    url("../images/backgroundetoiles2.png"),
+    url("../images/backgroundetoiles3.png");
     background-repeat: repeat;
     background-position: center;
     background-position: 50% 50%;
