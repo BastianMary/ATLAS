@@ -43,4 +43,8 @@ function changerTaille() {
     }  
     nbclick=!nbclick
 }
-;
+
+function tourner() {
+    var element = document.getElementById("fleche");
+    element.classList.toggle("clicked");
+}
