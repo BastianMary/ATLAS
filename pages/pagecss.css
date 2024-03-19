@@ -172,9 +172,9 @@ body{
     width: 100%;
     height: 100vh;
     background-image: 
-    url(https://media.discordapp.net/attachments/1068515510418944073/1080477847178723448/sketch-1677676374969.png?width=608&height=608),
-    url(https://media.discordapp.net/attachments/1068515510418944073/1080477846641856603/sketch-1677676361569.png?width=608&height=608),
-    url(https://media.discordapp.net/attachments/1068515510418944073/1080477846927048764/sketch-1677676368185.png?width=608&height=608);
+    url("../images/backgroundetoiles1.png"),
+    url("../images/backgroundetoiles2.png"),
+    url("../images/backgroundetoiles3.png");
     background-repeat: repeat;
     background-position: center;
     background-position: 50% 50%;
