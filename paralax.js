@@ -45,6 +45,12 @@ function changerTaille() {
 }
 
 function tourner() {
-    var element = document.getElementById("fleche");
-    element.classList.toggle("clicked");
+    var element = document.getElementById("lienfleche");
+    if (element.getAttribute("href") == "#contenus2") {
+        element.setAttribute("href","#contenus1")
+    }else{
+        element.setAttribute("href","#contenus2")
+    }
+    var image = document.getElementsByClassName("fleche");
+    image[0].classList.toggle("clicked"); 
 }

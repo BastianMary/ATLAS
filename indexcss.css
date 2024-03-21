@@ -130,17 +130,21 @@ html{
     animation: none;
     transform: scale(1.1);
 }
-img{
+
+.fleche{
     height: 100px;
     width: 100px;
     position: fixed;
     margin-left: 93%;
     border-radius: 40px;
     opacity: 0.4;
+    transform-origin: center;
     transition:transform 0.5s;
+    
 }
-.clicked{
+.fleche.clicked{
     transform: rotate(180deg);
+    background-color: red;
 }
 :hover img{
     transform: scale(1.4);
